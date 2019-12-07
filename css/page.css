@@ -1,0 +1,89 @@
+/* ここからがリクルート情報 */
+.recruit{
+    width: 100%;
+    background: rgba(245, 245, 245, 0.733);
+}
+
+.recruite-img{
+    width: 100%;
+}
+.recruite-img img{
+    width: 100%;
+    height: auto;
+}
+
+.recruite-div{
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+}
+.recruite-post{
+    margin: 2%;
+    width: 40%;
+    min-width: 400px;
+    background-color:white;
+}
+
+.recruite-content{
+    line-height: 1.8em;
+    font-size: 1.2em;
+    padding-top: 0.6em;
+}
+
+.recruite-card{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+}
+.recruite-card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin: 2% 0;
+}
+.recruite-text{
+    width: 100%;
+
+}
+.recruite-text p{
+    line-height: 3em;
+    text-align: center;
+    position:  relative;        /* 位置調整 */
+    font-weight:  normal;       /* 文字の太さ調整 */
+    font-size: 1.4em;            /* 文字サイズ指定 */
+    text-align:  center;        /* 文字位置指定 */
+    border-bottom:  solid 1px;  /* 線指定 */
+    max-width:  420px;              /* 幅指定 */
+    margin: 0 auto 10px;        /* 周りの余白指定 */
+}
+
+.recruite-text .wp-block-table{
+    width: 80%;
+    margin: 20px auto;
+    border: solid rgb(0, 119, 255) 0.9px;
+}
+.recruite-text .wp-block-table tbody{
+    width: 100%;
+}
+.wp-block-table td{
+    line-height: 1.8em;
+    border-bottom: rgba(81, 170, 253, 0.733) solid 1px;
+    text-align: center;
+}

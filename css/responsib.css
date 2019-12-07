@@ -1,0 +1,756 @@
+@media screen and (max-width:1000px ){
+
+/* style.css */
+
+/* 共通の全体設定 */
+
+h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+/* フェードインＪＳクラス */  /* 施工事例の所に採用 */
+.fadeIn {
+    transition: 1s;
+    opacity: 0;
+  }
+  
+  .fadeIn.animated {
+    opacity: 1;
+}
+
+
+/* ここからヘッダー */
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navi{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.918);
+
+}
+
+.navi > ul li a {
+    padding: 8px 16px;
+}
+
+.nav-right{
+    margin: 62px 0 0 0;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-right p{
+    line-height: 14px;
+    font-size: 12px;
+    padding: 0 4px;
+}
+.mail{
+    border-radius: 4px;
+   
+}
+.mail::after{
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+
+}
+
+
+/* ここまでがヘッダー */
+
+/* ここからがメイン */
+
+.main-logo{
+    top: 106%;
+}
+.main-logo img{
+    max-width: 80px;
+}
+.main-logo h1{
+    font-size: 1.6rem;
+
+}
+
+/* ここはメイン画像 */
+.sekou-h{
+    padding-top: 80px;
+}
+
+.main-text h2{
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.4rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+/* ここからが施工事例のスタイル */
+.case{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.case-left{
+    width: 100%;
+}
+
+.contentwrap{
+    height: 20rem;
+    padding: 20px 0;
+}
+
+.card-space img{
+    width: 50%;
+    height: 120%;
+
+}
+.card-space-div{
+    right: 6%;
+    width: 33%;
+    padding: 3% 4%;
+}
+.card-space p{
+    line-height: 1.8em;
+    font-size: 0.8em;
+}
+
+.card-space span{
+    font-size: 0.8em;
+    padding: 0.4em;
+
+}
+
+/* ここまでが施工事例のスタイル */
+
+/* 一旦style.css終了 */
+
+/* right.css始め */
+/* 右側のお知らせゾーン */
+.rightbar{
+    width: 100%;
+    max-width: 1000px;
+}
+/* right.css終わり */
+
+
+/* style.css続き */
+
+/* ここからがこだわり */
+.skills{
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: auto;
+}
+
+.skill-set h3{
+    line-height: 22px;
+    font-size: 18px;
+    margin-top: 4%;
+}
+.skill-set p{
+    line-height: 28px;
+    font-size: 18px;
+}
+.img-box{
+    width: 300px;
+    height: 300px;
+    margin: 4px 0;
+}
+
+/* ここからがリクルート情報 */
+
+.recruite-post{
+    width: 90%;
+}
+
+.recruite-text p{
+    line-height: 1.4em;
+    font-size: 1.2em;            /* 文字サイズ指定 */
+    border-bottom:  solid 0.8px;  /* 線指定 */
+}
+
+
+/* style.css再開ここからが会社概要 */
+.company{
+    padding: 20px 0;
+
+}
+.philosophy{
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.philosophy h3{
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+.philosophy p{
+    line-height: 30px;
+}
+.mission{
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.mission h3{
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+.mission p{
+    line-height: 30px;
+}
+
+.company-table{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.company-table caption{
+    line-height: 30px;
+}
+.company-table{
+    margin-top: 20px;
+    max-width: 780px;
+    width: 80%;
+    border-spacing: 0;
+  }
+
+/* ここからがシングルsingle.css */
+
+#container-single h2{
+    font-size: 1em;
+    margin: 0.6em 0;
+    padding: 1em 4em 1em 1em;
+}
+
+.time{
+    text-align: end;
+    margin: 6px 2px;
+    font-size: 0.8em;
+    color: #f6f6f6;
+}
+
+.single-content{
+    margin: 2%;   
+    padding: 0.5em;
+}
+.single-content p{
+    padding-top: 10px;
+    line-height: 1.6em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+}
+
+
+
+.backimg a{
+    font-size: 1rem;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.4em 1.5em;
+    text-decoration: none;
+    border-left: solid 4px #668ad8;
+    border-right: solid 4px #668ad8;
+    color: #668ad8;
+    background: #e1f3ff;
+    transition: .4s;
+}
+
+}
+
+/* ここまでがレスポンシブ1000Px */
+
+
+
+@media screen and (max-width:600px ){
+
+    /* ここからハンバーガー表示 */
+    .hamburger {
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        width: 42px;
+        height: 42px;
+        padding: 5px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .icon {
+      position: relative;
+      display: block;
+      top: 8px;
+    }
+    .icon:after, 
+    .icon:before {
+      content: "";
+      position: absolute;
+    }
+    .icon:before {
+      top: 12px;
+    }
+    .icon:after {
+      top: 24px;
+    }
+    .icon, 
+    .icon:before, 
+    .icon:after {
+      width: 100%;
+      height: 5px;
+      background-color: rgb(90, 52, 52);
+    }
+    /* ハンバーガーメニューをバツに変更するコード */
+    /* クリック動作はJSで指示 真ん中の棒を透明にする */
+    .hide:before { background-color: transparent; }
+    .rotate { transform: rotate(45deg) translate(7px, 9px); }
+    .rotate:after { transform: rotate(-90deg) translate( 24px, 0px); }
+    .rotate2 { transition: ease 1s; transform: rotate(360deg) ; }
+   /* メニューが降りてくる動きjsで表示をクラス指示 */
+    .heightUp { 
+        animation: move 0.8s;
+        height: auto;
+        
+    }
+    #navi{
+        display: none;
+    }
+    @keyframes move{
+        0%{ top: -100vh; }
+        0%{ right: -20vw; }
+        0%{ transform: rotate(-5deg); }
+        100%{ top: 0; }
+        100%{ right: 0; }
+        100%{ transform: rotate(0deg); }
+    }
+    /* ハンバーガーボタンここまで */
+
+
+/* style.css */
+/* 共通の全体設定 */
+h2{
+    padding-top: 30px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+/* フェードインＪＳクラス */  /* 施工事例の所に採用 */
+.fadeIn {
+    transition: 1s;
+    opacity: 0;
+  }
+  
+  .fadeIn.animated {
+    opacity: 1;
+}
+
+
+/* ここからヘッダー */
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.navi{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.918);
+
+}
+
+.navi > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    
+}
+.navi > ul li a {
+    padding: 8px 16px;
+}
+
+
+.nav-right{
+    width: 80%;
+    margin: 4px 0;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.nav-right p{
+    line-height: 16px;
+    font-size: 10px;
+
+}
+
+#breadcrumb ul{
+    display: flex;
+}
+#breadcrumb ul li{
+    padding: 8px 6px;
+    font-size: 0.8em;
+}
+#breadcrumb ul li a{
+    position: relative;
+}
+#breadcrumb ul li a::after{
+    position: absolute;
+    content: ">";
+    right: -11px;
+    bottom: 0.1em;
+}
+
+/* ここまでがヘッダー */
+
+/* ここからがメイン */
+main{
+    padding-top: 80px;
+}
+.main-logo{
+    top: -60px;
+    justify-content: center;
+}
+.main-logo img{
+    max-width: 60px;
+}
+.main-logo h1{
+    font-size: 20px;
+
+}
+
+/* ここはメイン画像 */
+.sekou-h{
+    padding-top: 20px;
+}
+
+.main-text h2{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+/* ここからが施工事例のスタイル */
+.case{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.case-left{
+    width: 100%;
+}
+
+.contentwrap{
+    padding: 20px 0;
+    height: 10rem;
+}
+.card-space{
+    height: 80%;
+}
+.card-space img{
+    width: 60%;
+    height: 110%;
+
+}
+.card-space-div{
+    right: 6%;
+    width: 37%;
+    padding: 4%;
+}
+.card-space p{
+    line-height: 1.2em;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    padding: 3px 0;
+}
+
+.card-space span{
+    display: none;
+}
+/* ページングCSS */
+.pagination span, .pagination a {
+    display: block;
+    width: auto;
+    margin: 2px;
+    padding: 6px;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 14px;
+}
+
+
+/* ここまでが施工事例のスタイル */
+
+/* 一旦style.css終了 */
+
+/* right.css始め */
+/* 右側のお知らせゾーン */
+.rightbar{
+    width: 90%;
+    max-width: 540px;
+}
+.infotext{
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+dd{
+    font-size: 14px;
+}
+/* right.css終わり */
+
+
+/* style.css続き */
+
+/* ここからがこだわり */
+.skills{
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: auto;
+}
+
+.skill-set h3{
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 4%;
+}
+.skill-set p{
+    line-height: 28px;
+    font-size: 14px;
+}
+.img-box{
+    width: 260px;
+    height: 260px;
+    margin: 4px 0;
+}
+
+/* ここからがリクルート情報 */
+
+.recruite-post{
+    width: 90%;
+}
+.recruite-content{
+    line-height: 30px;
+    font-size: 16px;
+    padding-top: 0.6em;
+}
+.recruite-card img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 2% 0;
+}
+.recruite-text p{
+    line-height: 24px;
+    font-size: 16px;            /* 文字サイズ指定 */
+    border-bottom:  solid 0.4px;  /* 線指定 */
+}
+.wp-block-table td{
+    line-height: 32px;
+    font-size: 14px;
+    border-bottom: rgba(81, 170, 253, 0.733) solid 1px;
+    text-align: center;
+}
+
+/* style.css再開ここからが会社概要 */
+.company{
+    padding: 20px 0;
+
+}
+.philosophy{
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.philosophy h3{
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+.philosophy p{
+    line-height: 30px;
+}
+.mission{
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.mission h3{
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+.mission p{
+    line-height: 30px;
+}
+
+.company-table{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.company-table caption{
+    line-height: 30px;
+}
+.company-table{
+    margin-top: 20px;
+    max-width: 780px;
+    width: 80%;
+    border-spacing: 0;
+  }
+
+/* ここからがシングルsingle.css */
+#container-single section{
+    width: 100%;
+
+}
+.sumne-img{
+    width: 100%;
+}
+#mainkizi{
+    max-height: 45vh;
+    
+}
+#container-single h2{
+    font-size: 1em;
+    margin: 0.6em 0;
+    padding: 1em 4em 1em 1em;
+}
+
+.time{
+    text-align: end;
+    margin: 6px 2px;
+    font-size: 0.8em;
+    color: #f6f6f6;
+}
+
+.single-content{
+    margin: 2%;   
+    padding: 0.5em;
+}
+.single-content p{
+    padding-top: 10px;
+    line-height: 1.6em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+}
+
+
+
+.backimg a{
+    font-size: 1rem;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.4em 1.5em;
+    text-decoration: none;
+    border-left: solid 4px #668ad8;
+    border-right: solid 4px #668ad8;
+    color: #668ad8;
+    background: #e1f3ff;
+    transition: .4s;
+}
+
+/* ここからcontact.phpのレスポンシブ */
+.contact-us p{
+    font-size: 0.8em;
+}
+.contact-input{
+    width: 100%;
+}
+.contact-submit{
+    left: 0;
+}
+
+
+
+/* ここからフッターのレスポンシブ */
+.kan{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.kan img{
+    width: 30px;
+    height: 30px;
+}
+
+.bottom p{
+    padding: 6px;
+    line-height: 14px;
+    font-size: 10px;
+    text-align: center;   
+}
+
+.form h3{
+    line-height: 30px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.map{
+    display: none;
+}
+
+
+.maxmap{
+    display: none;
+}
+
+.text-link-sekou{
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+}
+
+@media screen and (min-width:600px ){
+
+.minmap{
+    display: none;
+}
+
+.text-link-sekou{
+    display: none;
+}
+
+}

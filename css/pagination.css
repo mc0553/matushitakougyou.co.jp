@@ -1,0 +1,137 @@
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.pagination span, .pagination a {
+    display: block;
+    width: auto;
+    margin: 4px;
+    padding: 8px;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 16px;
+}
+
+/* ページ番号 */
+.pagination .pager{
+    width: 32px;
+}
+
+/* ホバー時 & 現在のページ */
+.pagination a:hover,
+.pagination .current  {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+}
+
+/* 前へ */
+.pagination a.prev {
+    margin-right: 16px;
+}
+/* 次へ */
+.pagination a.next {
+    margin-left: 16px;
+}
+/* 最初へ */
+/* .pagination a.first {
+
+} */
+/* 最後へ */
+/* .pagination a.last {
+
+} */
+
+/* Page x / y */
+.pagination span.page_num {
+    display: none;
+}
+/* ここまでがページャーのスタイル */
+
+
+
+
+
+
+/* ページングのデザイン */
+/* .screen-reader-text{
+    display:none;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-numbers{
+    display: block;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: rgb(3, 146, 146);
+    text-align: center;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    position: relative;
+
+}
+.page-numbers::before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(241, 241, 247);
+    transition: 0.3s ease;
+}
+.page-numbers:hover::before {
+    width: 60%;
+    
+}
+
+.nav-links span{
+    font-size: xx-large;
+    padding: 4px;
+    background-color: rgb(3, 124, 124);
+}
+.nav-links span::before{
+    display: none;
+}
+.prev{
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    background-color: rgb(3, 146, 146);
+    color: white;
+    font-weight: bold;
+}
+.prev::before{
+    display: none;
+}
+.next{
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    background-color: rgb(3, 146, 146);
+    color: white;
+    font-weight: bold;
+
+}
+.next::before{
+    display: none;
+} */
+

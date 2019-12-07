@@ -1,0 +1,117 @@
+
+/* 右側のお知らせゾーン */
+.rightbar{
+    margin-top: 0px;
+    width: 30%;
+    max-width: 400px;
+    min-width: 240px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.897);
+
+}
+
+
+/* ここからお知らせを表示 */
+.infotext{
+    line-height: 60px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+dl{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+}
+dt{
+    color: rgb(56, 9, 9);
+}
+dd{
+    color: rgb(56, 9, 9);
+}
+.infoCategory{
+    padding: 0;
+    border-top: solid 1px grey;
+    width: 96%;
+    
+}
+.infoCategory:hover{
+    color: rgb(44, 3, 3);
+    background: rgba(187, 187, 187, 0.548);
+}
+.infoCategory a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+dt{
+    margin-left: 2%;
+    font-size: 0.8rem;
+    min-width: 120px;
+}
+
+
+/* ここからがサイドウィジェット */
+.sidebar{
+    width: 100%;   
+}
+.widget_title{
+    padding: 20px 0 10px 0;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+}
+caption{
+    line-height: 30px;
+    font-size: 1rem;
+}
+#calendar_wrap{
+    padding-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+#wp-calendar{
+    margin-top: 0;
+    width: 60%;
+    min-width: 210px;
+}
+#wp-calendar tbody tr{
+    margin: 1% 0;
+}
+#wp-calendar tbody tr td{
+    text-align: center;
+}
+#wp-calendar tbody a{
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    color: blue;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.cat-item{
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 0.9em;
+}

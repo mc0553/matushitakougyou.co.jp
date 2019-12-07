@@ -1,0 +1,735 @@
+/* 共通の全体設定 */
+
+body {
+    background: url("../dist/img/backimg.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2 {
+    font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+}
+
+#container {
+    background-color: #FFF;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+
+/* フェードインＪＳクラス */
+
+
+/* 施工事例の所に採用 */
+
+.fadeIn {
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 0;
+}
+
+.fadeIn.animated {
+    opacity: 1;
+}
+
+
+/* ここからヘッダー */
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+.navi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.navi>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navi>ul li {
+    margin: 6px 3px;
+}
+
+.navi>ul li a {
+    padding: 10px 16px;
+    border-top: solid 2px rgba(0, 0, 0, 0.5);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    color: rgb(31, 7, 7);
+    display: block;
+}
+
+.navi>ul li a:hover {
+    border-top: solid 3px rgba(0, 0, 0, 0.8);
+    border-bottom: solid 3px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.164);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.nav-right {
+    margin: 12px 0;
+}
+
+.nav-right p {
+    line-height: 26px;
+}
+
+.email {
+    text-decoration: none;
+}
+
+.mail {
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin: 4px 0;
+    padding: 1px 0;
+    background-color: rgba(15, 15, 131, 0.884);
+    cursor: pointer;
+}
+
+.mail::after {
+    content: "";
+    background: url("../dist/img/mail-logo.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin: 0 6px;
+}
+
+
+/* パンくずリスト */
+
+#breadcrumb ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#breadcrumb ul li {
+    padding: 10px 16px;
+}
+
+#breadcrumb ul li a {
+    position: relative;
+}
+
+#breadcrumb ul li a::after {
+    position: absolute;
+    content: ">";
+    right: -20px;
+    bottom: 0.1em;
+}
+
+
+/* ここまでがヘッダー */
+
+
+/* ここからがメイン */
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-logo {
+    position: absolute;
+    top: 108%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    z-index: 30;
+}
+
+.main-logo img {
+    max-width: 100px;
+}
+
+.main-logo h1 {
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    /* font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 3.2rem;
+    letter-spacing: 0.1em;
+    color: #5e3e46;
+    /* 手書き風枠 */
+    /* border: 4px solid #5e3e46;
+    border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px; */
+    padding: 0.3em;
+    background: rgba(245, 245, 245, 0.096);
+    margin-left: 3%;
+    text-shadow: wheat 2px 2px 3px;
+    -webkit-box-shadow: 0 0 16px 1px rgba(253, 254, 255, 0.534);
+    box-shadow: 0 0 16px 1px rgba(253, 254, 255, 0.534);
+}
+
+
+/* ここはメイン画像 */
+
+.main-img {
+    position: relative;
+    -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 96%;
+    height: 100%;
+    background-color: #08080827;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-text h2 {
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.6rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+    color: white;
+}
+
+
+/* ここからが施工事例のスタイル */
+
+.case {
+    width: 94%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.case-left {
+    width: 70%;
+}
+
+.case-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.contentwrap {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    min-height: 250px;
+    max-height: 400px;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.card-space {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
+    height: 80%;
+    margin: 8% -10% 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(65, 61, 61, 0.13);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    overflow: hidden;
+}
+
+.card-space img {
+    width: 65%;
+    height: 120%;
+    position: absolute;
+    left: 6%;
+    top: -6%;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.card-space-div {
+    position: absolute;
+    top: -8%;
+    padding: 4%;
+    right: 10%;
+    width: 26%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: rgba(27, 10, 10, 0.904);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.card-space p {
+    padding: 6px;
+    line-height: 1.3em;
+    font-size: 1em;
+}
+
+.card-space span {
+    border: solid 2px whitesmoke;
+    line-height: 30px;
+    font-size: 1em;
+    color: white;
+    padding: 0.6em;
+    position: relative;
+}
+
+.card-space span::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    background-color: #FFF;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: -2;
+}
+
+.card-space span:hover::before {
+    width: 100%;
+}
+
+.card-space span:hover {
+    color: rgb(65, 65, 250);
+    border: cornflowerblue 0.2px solid;
+}
+
+.card-space a {
+    text-decoration: none;
+}
+
+
+/* ここまでが施工事例のスタイル */
+
+
+/* ここからがこだわり */
+
+.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: auto;
+    background-color: rgba(245, 245, 245, 0.562);
+}
+
+.skill-set h3 {
+    line-height: 40px;
+    font-size: 26px;
+    margin-top: 8%;
+}
+
+.skill-set p {
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.img-box {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    margin: 4px 0;
+}
+
+.img-box .scrimg {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-animation: bgAnime 25s infinite;
+    animation: bgAnime 25s infinite;
+}
+
+.img-box .src1 {
+    background-image: url(../dist/img/img1.jpg);
+}
+
+.img-box .src2 {
+    background-image: url(../dist/img/img2.jpg);
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.img-box .src3 {
+    background-image: url(../dist/img/img3.jpg);
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.img-box .src4 {
+    background-image: url(../dist/img/img4.jpg);
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+.img-box .src5 {
+    background-image: url(../dist/img/children.png);
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s
+}
+
+@-webkit-keyframes bgAnime {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bgAnime {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* ここからがインスタ挿入 */
+
+.topicks {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+
+/* ここからが会社概要 */
+
+.company {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    height: auto;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.philosophy {
+    max-width: 420px;
+    width: 100%;
+}
+
+.philosophy h3 {
+    line-height: 60px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.philosophy p {
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.mission {
+    max-width: 420px;
+    width: 100%;
+}
+
+.mission h3 {
+    line-height: 60px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.mission p {
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.company-table {
+    width: 100%;
+    max-width: 800px;
+}
+
+.company-table caption {
+    line-height: 60px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.company-table {
+    margin-top: 40px;
+    max-width: 480px;
+    width: 40%;
+    border-spacing: 0;
+}
+
+.company-table th {
+    border-bottom: solid 2px #c144fbc7;
+    padding: 10px 0;
+    vertical-align: middle;
+    font-weight: 100;
+}
+
+.company-table td {
+    border-bottom: solid 2px #ddd;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.map {
+    line-height: 60px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.form {
+    padding: 10px 0;
+}
+
+.form h3 {
+    line-height: 60px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cp_iptxt {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cp_iptxt input[type='text'] {
+    font: 15px/24px sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.3em;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #aaaaaa;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 1px 1px 2px 0 #707070 inset;
+    box-shadow: 1px 1px 2px 0 #707070 inset;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.ef input[type='text']:focus {
+    outline: none;
+    -webkit-box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+    box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+textarea {
+    margin: 6px;
+    font: 15px/24px sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.3em;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #aaaaaa;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 1px 1px 2px 0 #707070 inset;
+    box-shadow: 1px 1px 2px 0 #707070 inset;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.box button {
+    display: inline-block;
+    max-width: 180px;
+    text-align: left;
+    border: 2px solid #080808;
+    font-size: 16px;
+    color: #111f20;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 8px 16px;
+    border-radius: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.box button:hover {
+    cursor: pointer;
+    background-color: #9ec34b;
+    border-color: #cbe585;
+    color: #FFF;
+}
+
+.bottom {
+    height: auto;
+    width: 100%;
+    background-color: rgba(63, 62, 62, 0.87);
+    color: white;
+}
+
+.bottom p {
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.kan {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+}
+
+.kan:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.479);
+    border-radius: 50%;
+    padding: 2px;
+}

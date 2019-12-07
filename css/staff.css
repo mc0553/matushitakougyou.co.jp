@@ -1,0 +1,126 @@
+
+
+.staff-div {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  padding: 1vw 2vw;
+  background-color: rgba(255, 255, 255, 0.897);
+  
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.staff-post {
+  margin: 1.5vw 0.6vw;
+  width: 240px;
+  overflow: hidden;
+  border-radius: 1vw;
+  background-color: #fff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.staff-card {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding-bottom: 75%;
+  background-color: #5D9CEC;
+  background-size: cover;
+}
+
+.staff-card img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.staff-card img:hover{
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.staff-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 5;
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  .staff-card:hover::before {
+    top: -400px;
+    bottom: 400px;
+  }
+
+.staff-card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    z-index: 10;
+  }
+
+
+.staff-content {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  z-index: 15;
+  position: absolute;
+  bottom: 0;
+  left: 6.25%;
+  width: 75%;
+  padding-bottom: 4%;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.staff-text {
+  padding: 3%;
+
+}
+
+.staff-text p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+  color: #656D78;
+}
+
+
